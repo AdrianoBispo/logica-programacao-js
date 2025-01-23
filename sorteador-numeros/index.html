@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fontes Importadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts JS -->
+    <script src="app.js" defer></script> <!-- 'defer' faz com que o script seja carregado após o carregamento da página. -->
+
     <title>Sorteador de números</title>
 </head>
 
@@ -35,12 +43,12 @@
                 </div>
                 
                 <div class="chute container__botoes">
-                    <button onclick="sortear()" id="btn-sortear" class="container__botao">Sortear</button>
-                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
+                    <button id="btn-sortear" class="container__botao">Sortear</button>
+                    <button id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
                 </div>
 
                 <div class="container__texto" id="resultado">
-                    <label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>
+                    <label class="texto__paragrafo">Nenhum número foi sorteado. </label>
                 </div>
             </div>
 
@@ -48,7 +56,6 @@
         </div>
     </div>
 
-    <script src="app.js" defer></script>
 </body>
 
 </html>
